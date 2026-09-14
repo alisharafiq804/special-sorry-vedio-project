@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7fa">
+  <title>I’m Sorry — Really Really Sorry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="trail"></div>
+  <div class="petals"></div>
+
+  <main id="app">
+    <!-- PAGE 1 -->
+    <section class="page active hero-page" data-page="0">
+      <div class="hero-card glass">
+        <div class="tiny-label">FOR A FRIEND WHO MATTERS</div>
+        <h1>I’m Sorry,<br><em>Really Really Sorry</em></h1>
+        <div class="divider"><span>♡</span></div>
+        <p class="hero-copy">No drama. No excuses. Just a genuine sorry from a friend.</p>
+        <p class="hero-copy soft">I can’t rewind what happened, but I can admit when I was wrong and say sorry properly.</p>
+
+        <div class="hero-image-wrap">
+          <div class="glow"></div>
+          <img src="assets/images (6).jpg" alt="A heartfelt sorry image">
+        </div>
+
+        <p class="two-lines"><b>I’m sorry</b> if I made things awkward or hurt you.<br>
+        And honestly, I should have handled it better.</p>
+
+        <button class="primary-btn" data-next>
+          <span>Read my actual apology</span><span>♡</span>
+        </button>
+        <p class="hint">Click once to begin the experience • sound will be enabled</p>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page letter-page" data-page="1">
+      <div class="letter-layout">
+        <div class="letter-sheet glass">
+          <div class="stamp">SORRY<br>•</div>
+          <div class="tiny-label">A LETTER I MEANT TO WRITE</div>
+          <h2>A Straightforward Sorry<br><em>From A Friend</em></h2>
+          <div id="letter-text"></div>
+          <div class="signature">Honestly, I’m sorry.<br><span>— your friend</span></div>
+        </div>
+        <div class="letter-photo">
+          <div class="tape"></div>
+          <img src="assets/images.jpg" alt="Sorry letter memory">
+          <span>please forgive me</span>
+        </div>
+      </div>
+      <div class="nav-row"><button class="ghost-btn" data-prev>← Back</button><button class="primary-btn" data-next>Keep reading →</button></div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page memories-page" data-page="2">
+      <div class="section-head">
+        <div class="tiny-label">ONE PHOTO • ONE SORRY</div>
+        <h2>For Every Little <em>Moment</em></h2>
+        <p>Scroll slowly. Each memory carries a different kind of sorry.</p>
+      </div>
+      <div id="memories" class="memory-stack"></div>
+      <div class="nav-row"><button class="ghost-btn" data-prev>← Letter</button><button class="primary-btn" data-next>Next: one more memory →</button></div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page media-page" data-page="3">
+      <div class="media-card glass">
+        <div class="tiny-label">A MEMORY I WANTED YOU TO SEE</div>
+        <h2>Some moments deserve<br><em>to be remembered.</em></h2>
+        <div class="video-frame">
+          <video id="person-video" src="assets/WhatsApp Video 2026-09-14 at 11.45.58 AM.mp4" playsinline controls preload="auto"></video>
+        </div>
+        <p class="media-caption">No big emotional speech — just one memory I wanted you to see.</p>
+      </div>
+      <div class="nav-row"><button class="ghost-btn" data-prev>← Memories</button><button class="primary-btn" data-next>Next: a song for you →</button></div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page media-page song-page" data-page="4">
+      <div class="media-card glass">
+        <div class="tiny-label">SONG • MEMORY • FEELING</div>
+        <h2>For the things<br><em>I couldn’t say.</em></h2>
+        <div class="video-frame">
+          <video id="song-one" src="assets/WhatsApp Video 2026-09-14 at 11.32.12 AM.mp4" playsinline controls preload="auto"></video>
+        </div>
+        <p class="media-caption">No pressure. Just let the song play for a while.</p>
+      </div>
+      <div class="nav-row"><button class="ghost-btn" data-prev>← Back</button><button class="primary-btn" data-next>One last song →</button></div>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section class="page media-page song-page" data-page="5">
+      <div class="media-card glass">
+        <div class="tiny-label">ONE LAST SONG</div>
+        <h2>One last thing I wanted<br><em>to share with you.</em></h2>
+        <div class="video-frame">
+          <video id="song-two" src="assets/WhatsApp Video 2026-09-14 at 11.19.17 AM (1).mp4" playsinline controls preload="auto"></video>
+        </div>
+        <p class="media-caption">Stay till the end — there’s a small, slightly silly surprise waiting.</p>
+      </div>
+      <div class="nav-row"><button class="ghost-btn" data-prev>← Back</button><button class="primary-btn" data-next>Open the final page ♡</button></div>
+    </section>
+
+    <!-- PAGE 7 -->
+    <section class="page final-page" data-page="6">
+      <div class="final-card glass">
+        <div class="floating-hearts">♡　♡　♡</div>
+        <div class="emoji-row"><span>🫣</span><span>🥳</span><span>😎</span></div>
+        <h2>My friend’s<br><em>special emojis.</em></h2>
+        <p class="final-text">After all those sorries…<br>Because every good friendship deserves a little awkwardness, laughter, and cool energy.</p>
+        <div class="final-note">🫣 for the awkward “okay… I’m sorry”<br>🥳 for the “chalo, ab theek hai” moment<br>😎 for the “still cool, bro” energy</div>
+        <button class="primary-btn" id="restart">Replay from the beginning ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress"><span id="progress-bar"></span></div>
+  <div class="page-count"><span id="page-num">1</span> / 7</div>
+  <script src="script.js"></script>
+</body>
+</html>
